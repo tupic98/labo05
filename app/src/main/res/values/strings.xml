@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Labo05-Lunes</string>
+    <string-array name="SeriesTitle">
+        <item>The Walking Dead</item>
+        <item>Game of Thrones</item>
+        <item>Breaking Bad</item>
+    </string-array>
+    <string-array name="SeriesDesc">
+        <item>TV show created by Robert Kirgman</item>
+        <item>TV show created by George R. Martin</item>
+        <item>Tv show created by Vince Gilligan</item>
+    </string-array>
+    <string-array name="SeriesCaps">
+        <item>13</item>
+        <item>18</item>
+        <item>35</item>
+    </string-array>
+    <integer-array name="Seriesimg">
+        <item>@drawable/twd</item>
+        <item>@drawable/got</item>
+        <item>@drawable/bb</item>
+    </integer-array>
 </resources>
