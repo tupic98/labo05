@@ -1,7 +1,6 @@
 package com.alvarenga.labo05_lunes;
 
 import android.content.Context;
-import android.support.v7.view.menu.MenuView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +11,11 @@ import java.util.List;
 
 public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetViewHolder>{
     Context aCtx;
-    List<Planet> planetList;
+    List<Serie> serieList;
 
-    public PlanetAdapter(Context aCtx, List<Planet> planetList) {
+    public PlanetAdapter(Context aCtx, List<Serie> serieList) {
         this.aCtx = aCtx;
-        this.planetList = planetList;
+        this.serieList = serieList;
     }
 
     @Override
@@ -28,13 +27,13 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetView
 
     @Override
     public void onBindViewHolder(PlanetViewHolder holder, int position) {
-        holder.title.setText(planetList.get(position).getTitle());
-        holder.description.setText(planetList.get(position).getDesc());
+        holder.title.setText(serieList.get(position).getTitle());
+        holder.description.setText(serieList.get(position).getDesc());
     }
 
     @Override
     public int getItemCount() {
-        return planetList.size();
+        return serieList.size();
     }
 
     protected class PlanetViewHolder extends RecyclerView.ViewHolder {
@@ -42,7 +41,7 @@ public class PlanetAdapter extends RecyclerView.Adapter<PlanetAdapter.PlanetView
         public PlanetViewHolder(View itemView){
             super(itemView);
             title = itemView.findViewById(R.id.cardtitle);
-            description = itemView.findViewById(R.id.carddesc);
+            description = itemView.findViewById(R.id.cardbutton);
         }
     }
 }
