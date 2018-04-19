@@ -1,14 +1,15 @@
 package com.alvarenga.labo05_lunes;
 
-public class Planet {
+public class Serie {
     private int id;
-    private String title, desc;
+    private String title, desc, caps;
 
 
-    public Planet(int id, String title, String desc) {
+    public Serie(int id, String title, String desc, String caps) {
         this.desc = desc;
         this.id = id;
         this.title = title;
+        this.caps = caps;
     }
 
     public int getId() {
@@ -21,6 +22,10 @@ public class Planet {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getCaps() {
+        return caps;
     }
 }
 
